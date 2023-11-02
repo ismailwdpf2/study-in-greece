@@ -1,0 +1,40 @@
+.nav-link:hover{
+color: rgb(7, 68, 175) !important; 
+}
+
+.home_header {
+    color: white;
+    align-items: center;
+    padding-top: 200px;
+
+}
+.home_header > h1{
+    font-size: 60px !important;
+}
+.bcat{
+    text-align: center;
+    color: rgb(0, 0, 12);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.footer{
+    background-color: #0B3565;
+    color: white;
+}
+ul li{
+    list-style:none;
+}
+.thumbnail{
+    height: 180px;
+    margin: 3px;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+.city-pic{
+    height: 250px;
+    width: 250px;
+    margin: 10px;
+}
+.last-content{
+    color: white;
+}

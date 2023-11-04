@@ -1,40 +1,80 @@
-.nav-link:hover{
-color: rgb(7, 68, 175) !important; 
+.nav-link:hover {
+    color: rgb(7, 68, 175) !important;
 }
-
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background: #fff; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+.navbar{
+    border-top: 1px solid #D2D6DF;
+    border-bottom: 1px solid #D2D6DF;
+    display: flex;
+    justify-content: space-between;
+}
 .home_header {
     color: white;
     align-items: center;
     padding-top: 200px;
-
 }
-.home_header > h1{
+.home_header > h1 {
     font-size: 60px !important;
 }
-.bcat{
+.bcat {
     text-align: center;
     color: rgb(0, 0, 12);
     margin-top: 30px;
     margin-bottom: 30px;
 }
-.footer{
-    background-color: #0B3565;
+.footer {
+    background-color: #0b3565;
     color: white;
 }
-ul li{
-    list-style:none;
+ul li {
+    list-style: none;
 }
-.thumbnail{
-    height: 180px;
-    margin: 3px;
-    border: 1px solid gray;
+.homecat {
+    display: block;
+    align-items: center;
+    
+}
+.card{
+    /* margin-right: 5px; */
+}
+.thumbnail {
+    /* height: 160px; */
+    /* margin-bottom: 4px; */
+    background-color: #f8f8fa;
     border-radius: 4px;
+    text-align: center;
 }
-.city-pic{
+.city-pic {
     height: 250px;
     width: 250px;
     margin: 10px;
 }
-.last-content{
+.last-content {
     color: white;
+}
+.cat-svg {
+    overflow: hidden;
+    height: 90px;
+    width: 80px;
+    margin-top: 10px;
+}
+.city{
+    position: relative;
+}
+.city-title{
+    position: absolute;
+    bottom: 8px;
+    margin-bottom: 5px;
+    font-size: 22px;
+    color: white;
+}
+.contact{
+    text-align: center;
 }

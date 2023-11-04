@@ -32,40 +32,110 @@
     </div>
   </section>
 
-  <section>
+  <section class="container">
     <h3 class="bcat">Bachelor degrees Category</h3>
     <div class="row">
-        <div class=" col-lg-3 col-md-3 col-sm-6">
-            <div class="thumbnail"></div>
+        <div class="card col-2 b" style="height: 178px;">
+            <div class="homecat">
+              <div class="thumbnail">
+                <img class="cat-svg" src="{{ asset("user/img/business-management-.svg") }}" alt="">
+                <p>Business & Management</p>
+              </div>
+            </div>
         </div>
-        <div class=" col-lg-3 col-md-3 col-sm-6">
-            <div class="thumbnail"></div>
+        <div class="card col-2 b" style="height: 178px;">
+            <div class="thumbnail">
+              <img class="cat-svg" src="{{ asset("user/img/finance-book-svgrepo-com.svg") }}" alt="">
+              <p>Finance</p>
+            </div>
         </div>
-        <div class=" col-lg-3 col-md-3 col-sm-6">
-            <div class="thumbnail"></div>
+        <div class="card col-2 b" style="height: 178px;">
+            <div class="thumbnail">
+              <img class="cat-svg" src="{{ asset("user/img/business-management-.svg") }}" alt="">
+              <p>Business & Management</p>
+            </div>
         </div>
-        <div class=" col-lg-3 col-md-3 col-sm-6">
-            <div class="thumbnail"></div>
+        <div class="card col-2 b" style="height: 178px;">
+            <div class="thumbnail">
+              <img class="cat-svg" src="{{ asset("user/img/pie-chart-pie-1.svg") }}" alt="">
+              <p>Marketing & Media</p>
+             </div>
         </div>
-        <div class=" col-lg-3 col-md-3 col-sm-6">
-            <div class="thumbnail"></div>
+        <div class="card col-2 b" style="height: 178px;">
+            <div class="thumbnail">
+              <img class="cat-svg" src="{{ asset("user/img/book.png") }}" alt="">
+              <p>Law</p>
+            </div>
         </div>
-        <div class=" col-lg-3 col-md-3 col-sm-6">
-            <div class="thumbnail"></div>
+        <div class="card col-2 b" style="height: 178px;">
+            <div class="thumbnail">
+              <img class="cat-svg" src="{{ asset("user/img/programmer-svgrepo-com.svg") }}" alt="">
+              <p>Computer Science & IT</p>
+            </div>
         </div>
-        <div class=" col-lg-3 col-md-3 col-sm-6">
-            <div class="thumbnail"></div>
+        <div class="card col-2 b" style="height: 178px;">
+            <div class="thumbnail">
+              <img class="cat-svg" src="{{ asset("user/img/edit-cover-1481-svgrepo-com.svg") }}" alt="">
+              <p>Art & Design</p>
+            </div>
         </div>
-        <div class=" col-lg-3 col-md-3 col-sm-6">
-            <div class="thumbnail"></div>
+        <div class="card col-2 b" style="height: 178px;">
+            <div class="thumbnail">
+              <img class="cat-svg" src="{{ asset("user/img/setting-line-svgrepo-com.svg") }}" alt="">
+              <p>Engineering & Technology</p>
+            </div>
+        </div>
+        <div class="card col-2 b" style="height: 178px;">
+            <div class="thumbnail">
+              <img class="cat-svg" src="{{ asset("user/img/landmark-svgrepo-com.svg") }}" alt="">
+              <p>Tourism</p>
+            </div>
+        </div>
+        <div class="card col-2 b" style="height: 178px;">
+            <div class="thumbnail">
+              <img class="cat-svg" src="{{ asset("user/img/ship-1-svgrepo-com.svg") }}" alt="">
+              <p>Shipping</p>
+            </div>
+        </div>
+        <div class="card col-2 b" style="height: 178px;">
+            <div class="thumbnail">
+              <img class="cat-svg" src="{{ asset("user/img/health-svgrepo-com.svg") }}" alt="">
+              <p>Health</p>
+            </div>
+        </div>
+        <div class="card col-2 b" style="height: 178px;">
+            <div class="thumbnail">
+              <img class="cat-svg" src="{{ asset("user/img/psychology-book-svgrepo-com.svg") }}" alt="">
+              <p>Psychology</p>
+            </div>
+        </div>
+        <div class="card col-2 b" style="height: 178px;">
+            <div class="thumbnail">
+              <img class="cat-svg" src="{{ asset("user/img/education-learning-16-svgrepo-com.svg") }}" alt="">
+              <p>Education</p>
+            </div>
+        </div>
+        <div class="card col-2 b" style="height: 178px;">
+            <div class="thumbnail">
+              <img class="cat-svg" src="{{ asset("user/img/agriculture-svgrepo-com.svg") }}" alt="">
+              <p>Agri-food</p>
+            </div>
+        </div>
+        <div class="card col-2 b" style="height: 178px;">
+            <div class="thumbnail">
+              <img class="cat-svg" src="{{ asset("user/img/sun-svgrepo-com.svg") }}" alt="">
+              <p>Summer Programmes</p>
+            </div>
         </div>
     </div>
   </section>
 
   <section>
     <h3 class="bcat">Bechelor degrees by City</h3>
-    <div class="d-flex justify-content-center">
+    <div class="city d-flex justify-content-center">
+      <div class="city-title">Athens</div>
          <img class="city-pic" src="{{ asset('user/img/campus (1).jpeg') }}" alt="">
+        
          <img class="city-pic" src="{{ asset("user/img/campus (2).jpg") }}" alt="">
          <img class="city-pic" src="{{ asset("user/img/campus (5).jpg") }}" alt="">
     </div>

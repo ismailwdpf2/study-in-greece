@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <link rel="stylesheet" href="{{ asset('user/css/style.css') }}">
     <title>study-in-greece</title>
     <style>
@@ -29,19 +30,16 @@
 <body>
     <header>
 
-        <div class="top-logo m-4">
+        <div class="container top-logo m-4">
             <a href="{{ route('home') }}"><img src="{{ asset('user/img/Logo_Study_In_Greece.png') }}"
                     alt=""></a>
-
         </div>
-        <hr>
-        <span class="material-symbols-outlined">
-
-        </span>
+        
         <nav class="navbar navbar-expand-lg ">
-            <div class="container-fluid">
+            <div class="container d-flex justify-content-between align-items-center">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                 
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
@@ -129,6 +127,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
     </script>
+    <script src="{{ asset('user/js/main.js') }}"></script>
 </body>
 
 </html>

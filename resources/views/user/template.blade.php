@@ -34,12 +34,10 @@
             <a href="{{ route('home') }}"><img src="{{ asset('user/img/Logo_Study_In_Greece.png') }}"
                     alt=""></a>
         </div>
-        
-        <nav class="navbar navbar-expand-lg ">
-            <div class="container d-flex justify-content-between align-items-center">
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                 
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+        <div class="underline">
+        <nav class="navbar navbar-expand-lg">
+                
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 container d-flex justify-content-between ">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
@@ -70,27 +68,25 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link ">INTERNATIONAL STUDENTS</a>
+                            <a href="{{route('intstudent')}}" class="nav-link ">INTERNATIONAL STUDENTS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link ">LIVING IN GREECE</a>
+                            <a href="{{route('living')}}" class="nav-link ">LIVING IN GREECE</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link ">CONTACT</a>
+                            <a href="{{route('contact')}}" class="nav-link">CONTACT</a>                          
                         </li>
-
+                        <i class="fa-solid fa-magnifying-glass"
+                        style=" color:white; background: #fb3807; border-radius:50%; padding:10px;  margin-left: 50px"></i>
                     </ul>
-                    <i class="fa-solid fa-magnifying-glass"
-                        style=" color:white; background: #fb3807; border-radius:50%; padding:10px; margin-right: 50px"></i>
-                </div>
-            </div>
+                    
         </nav>
-
+    </div>
     </header>
     @yield('usercontent')
 
     <footer>
-        <div class="row footer p-3">
+        <div class="row footer">
 
             <div class="col-sm-6 col-md-3"><img src="{{ asset('user/img/Logo_Study_In_Greece_white.png') }}"
                     alt=""></div>
@@ -122,6 +118,10 @@
               <i class="fa-brands fa-twitter mx-2"></i>
               <i class="fa-brands fa-linkedin"></i>
             </div>
+        </div>
+        <div class="footer-end">
+            <p>Study In Greece © 2019 | Terms of Use | Privacy Policy</p>
+            
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

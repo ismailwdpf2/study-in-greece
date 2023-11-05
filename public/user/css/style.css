@@ -2,7 +2,14 @@
     color: rgb(7, 68, 175) !important;
 }
 .top-logo{
-    margin-left: 80px !important;
+    height: 120px;
+    margin-left: 40px !important;
+}
+#logo{
+
+    height: 100px;
+    width: 280px;
+    margin: 10px;
 }
 .fixed-nav {
     position: fixed;
@@ -118,3 +125,4 @@ ul li {
   .list-item li{
     list-style: disc;
   }
+  

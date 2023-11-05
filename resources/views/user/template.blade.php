@@ -24,15 +24,15 @@
             width: 100%;
           background-image: url('{{ asset('user/img/homebg.jpg') }}');
         }
+
     </style>
 </head>
 
 <body>
     <header>
 
-        <div class="container top-logo m-4">
-            <a href="{{ route('home') }}"><img src="{{ asset('user/img/Logo_Study_In_Greece.png') }}"
-                    alt=""></a>
+        <div class="container top-logo">
+            <a  href="{{ route('home') }}"><img id="logo" src="{{ asset('user/img/move-abroad.jpeg') }}" alt=""></a>
         </div>
         <div class="underline">
         <nav class="navbar navbar-expand-lg">
@@ -44,12 +44,27 @@
                                 BECHELOR
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#"><b>Bachelor Degrees Home</b></a></li>
+                                <li><b><a class="dropdown-item" href="#">Bachelors Categories</a></b></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#">Business & Management</a></li>
+                                <li><a class="dropdown-item" href="#">Marketing & Media</a></li>
+                                <li><a class="dropdown-item" href="#">Law</a></li>
+                                <li><a class="dropdown-item" href="#">Computer Science & IT</a></li>
+                                <li><a class="dropdown-item" href="#">Art & Design</a></li>
+                                <li><a class="dropdown-item" href="#">Engineering & Technology</a></li>
+                                <li><a class="dropdown-item" href="#">Tourism</a></li>
+                                <li><a class="dropdown-item" href="#">Shipping</a></li>
+                                <li><a class="dropdown-item" href="#">Psychology</a></li>
+                                <li><a class="dropdown-item" href="#">Education</a></li>
+                                <li><a class="dropdown-item" href="#">Agri-food</a></li>
+                                <li><a class="dropdown-item" href="#">Summer Programmes</a></li>
+                                <li><a class="dropdown-item" href="#">More</a></li>
+                                <li><a class="dropdown-item" href="#">Institutes</a></li>
+                                <li><a class="dropdown-item" href="#">Contact</a></li>
+                                
                             </ul>
                         </li>
 
@@ -59,12 +74,27 @@
                                 MASTERS
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#"><b>Bachelor Degrees Home</b></a></li>
+                                <li><b><a class="dropdown-item" href="#">Bachelors Categories</a></b></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#">Business & Management</a></li>
+                                <li><a class="dropdown-item" href="#">Marketing & Media</a></li>
+                                <li><a class="dropdown-item" href="#">Law</a></li>
+                                <li><a class="dropdown-item" href="#">Computer Science & IT</a></li>
+                                <li><a class="dropdown-item" href="#">Art & Design</a></li>
+                                <li><a class="dropdown-item" href="#">Engineering & Technology</a></li>
+                                <li><a class="dropdown-item" href="#">Tourism</a></li>
+                                <li><a class="dropdown-item" href="#">Shipping</a></li>
+                                <li><a class="dropdown-item" href="#">Psychology</a></li>
+                                <li><a class="dropdown-item" href="#">Education</a></li>
+                                <li><a class="dropdown-item" href="#">Agri-food</a></li>
+                                <li><a class="dropdown-item" href="#">Summer Programmes</a></li>
+                                <li><a class="dropdown-item" href="#">More</a></li>
+                                <li><a class="dropdown-item" href="#">Institutes</a></li>
+                                <li><a class="dropdown-item" href="#">Contact</a></li>
+                                
                             </ul>
                         </li>
                         <li class="nav-item">

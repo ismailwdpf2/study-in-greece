@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\User\CategoryController;
 use App\Http\Controllers\User\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -29,6 +30,8 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+// user_route......
+
 Route::controller(UserController::class)->group(function () {
     Route::get('home', 'home')->name('home');
     Route::get('bechelor', 'bechelor')->name('bechelor');
@@ -39,5 +42,9 @@ Route::controller(UserController::class)->group(function () {
  
 });
 
+Route::controller(CategoryController::class)->group(function(){
+    Route::get('cat_main', 'cat_main')->name('cat_main');
+    Route::get('cat_detail', 'cat_detail')->name('cat_detail');
+});
 
 require __DIR__.'/auth.php';

@@ -44,7 +44,7 @@
                                 BECHELOR
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#"><b>Bachelor Degrees Home</b></a></li>
+                                <li><a class="dropdown-item" href="{{ route('home') }}"><b>Bachelor Degrees Home</b></a></li>
                                 <li><b><a class="dropdown-item" href="#">Bachelors Categories</a></b></li>
                                 <li>
                                     <hr class="dropdown-divider">

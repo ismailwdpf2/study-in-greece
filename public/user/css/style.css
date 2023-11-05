@@ -125,4 +125,10 @@ ul li {
   .list-item li{
     list-style: disc;
   }
+
+  /* category */
+  .cat-main{
+    height: 250px;
+    background-color: #0B3565;
+  }
   

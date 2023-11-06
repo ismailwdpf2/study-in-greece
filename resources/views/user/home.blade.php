@@ -2,7 +2,7 @@
 @section('usercontent')
 <section>
     <div class="home_header">
-      <h1 class="top d-flex justify-content-center">Study in Greece</h1>
+      <h1 class="top d-flex justify-content-center">Move Abroad</h1>
       <p class="d-flex justify-content-center">Find and compare Bachelor degrees from Universities and Colleges in Greece
       </p>
       <div class="search d-flex justify-content-center">
@@ -11,9 +11,20 @@
             Select a Bachelors Category
           </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">Marketing & Media</a></li>
+            <li><a class="dropdown-item" href="#">Law</a></li>
+            <li><a class="dropdown-item" href="#">Computer Science & IT</a></li>
+            <li><a class="dropdown-item" href="#">Art & Design</a></li>
+            <li><a class="dropdown-item" href="#">Engineering & Technology</a></li>
+            <li><a class="dropdown-item" href="#">Tourism</a></li>
+            <li><a class="dropdown-item" href="#">Shipping</a></li>
+            <li><a class="dropdown-item" href="#">Psychology</a></li>
+            <li><a class="dropdown-item" href="#">Education</a></li>
+            <li><a class="dropdown-item" href="#">Agri-food</a></li>
+            <li><a class="dropdown-item" href="#">Summer Programmes</a></li>
+            <li><a class="dropdown-item" href="#">More</a></li>
+            <li><a class="dropdown-item" href="#">Institutes</a></li>
+            <li><a class="dropdown-item" href="#">Contact</a></li>
           </ul>
         </div>
 
@@ -22,9 +33,9 @@
             Search in all cities  
           </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">Athens</a></li>
+            <li><a class="dropdown-item" href="#">Thessaloniki</a></li>
+            <li><a class="dropdown-item" href="#">Piraeus</a></li>
           </ul>
         </div>
         <button class="btn btn-danger px-3">search</button>

@@ -2,35 +2,55 @@
 @section('usercontent')
     <div>
         <div class="detail-top">
-            <p class="text-white mx-5 p-3">Bechelor| Business Management|</p>
+            <p class="text-white mx-5 p-2">Bechelor| Business Management|</p>
             <div>
                 <div class="container dtl-banner bg-white d-flex">
-                    <div><b>Bachelors:</b><p>Marketing & Media</p>
+                    <div><b>Bachelors:</b>
+                        <p>Marketing & Media</p>
 
                         <h1>BA (Hons) Business Management (Marketing)</h1>
 
+                        <div class="my-5">
+                            
+                            <div>
+                                <p> Share it:</p>
+                                <a href="#"><i class="shareicon fa-brands fa-facebook" style="color: #075ef2;"></i></a>
+                                <a href="#"><i class="shareicon fa-brands fa-facebook-messenger" style="color: #0459ec;"></i></a>
+                                <a href="#"><i class="shareicon fa-brands fa-linkedin" style="color: #055bf0;"></i></a>
+                                <a href="#"><i class="shareicon fa-solid fa-envelope" style="color: #86898d;"></i></a>
+                                <a href="#"><i class="shareicon fa-sharp fa-solid fa-share-nodes" style="color: #2cd84e;"></i></a>
+                               
+
+                            </div>
+
+                        </div>
                     </div>
 
                     <div class="dtl-img">
-                        <img src="{{asset("user/img/marketing_epik_B.jpg")}}" alt="">
+                        <img src="{{ asset('user/img/marketing_epik_B.jpg') }}" alt="">
                     </div>
                 </div>
             </div>
 
         </div>
         <div class="container">
-            <div class="college-card">
+            <div class="college-card d-flex justify-content-between">
                 <div class="p-3 d-flex">
-                    <img src="{{asset('user/img/deree_new_logo.jpg')}}" alt="">
+                    <img src="{{ asset('user/img/deree_new_logo.jpg') }}" alt="">
                     <div>
                         <span>Institute:</span>
                         <h5>DEREE - The American College of Greece</h5>
-                    </div>
+                        <a href="#">See all Bachelors offered by this institute</a>
+                    </div>                  
+                </div>
+
+                <div class="p-4 mx-5">
+                 <a href=""><i class="fa-solid fa-square-phone"></i></a>   +88 210 600 9800
                 </div>
             </div>
 
         </div>
-        
+
 
 
     </div>

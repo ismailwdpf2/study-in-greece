@@ -44,12 +44,12 @@
                                 BECHELOR
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="{{ route('home') }}"><b>Bachelor Degrees Home</b></a></li>
-                                <li><b><a class="dropdown-item" href="#">Bachelors Categories</a></b></li>
+                                <li><a class="dropdown-item" href="{{ route('home') }}">Bachelor Degrees Home</a></li>
+                                <li class="dropdown-item" ><b> Bachelors Categories</b></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Business & Management</a></li>
+                                <li><a class="dropdown-item" href="{{route('cat_main')}}">Business & Management</a></li>
                                 <li><a class="dropdown-item" href="#">Marketing & Media</a></li>
                                 <li><a class="dropdown-item" href="#">Law</a></li>
                                 <li><a class="dropdown-item" href="#">Computer Science & IT</a></li>

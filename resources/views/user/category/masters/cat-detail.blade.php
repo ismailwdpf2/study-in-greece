@@ -3,10 +3,10 @@
 
     <div>
         <div class="detail-top">
-            <p class="text-white mx-5 p-2">Bechelor| Business Management|</p>
+            <p class="text-white mx-5 p-2">Masters| Business Management|</p>
             <div>
                 <div class="container dtl-banner bg-white d-flex">
-                    <div><b>Bachelors:</b>
+                    <div><b>Masters:</b>
                         <p>Marketing & Media</p>
 
                         <h1>BA (Hons) Business Management (Marketing)</h1>
@@ -127,26 +127,6 @@
                             </li>
                         </ul>
                     </div>
-
-                    <div class="dtl-main my-2">
-                        
-                        <h6>THROUGH THE MSc in RISK MANAGEMENT PROGRAM, YOU WILL:
-                        </h6>
-
-                        <ul>
-                            <li style="list-style: disc;">
-                                Develop an appreciation of financial & operational risks faced by financial institutions, corporations and market investors.
-                            </li>
-                            <li style="list-style: disc;">
-                                Strengthen quantitative skills required for measuring the impact of extreme events.
-                            </li>
-                            <li style="list-style: disc;">
-                                Be prepared to deal with risks that may arise from unforeseen circumstances.
-                            </li>
-                        </ul>
-                    </div>
-
-
                 </div>
 
 

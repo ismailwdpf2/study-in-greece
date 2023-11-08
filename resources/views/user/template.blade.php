@@ -15,89 +15,106 @@
     <title>move-abroad</title>
     <style>
         .home_header {
-            height: 400px;
+            height: 460px;
             width: 100%;
-            background-image: url('{{ asset('user/img/homebanner.jpg') }}');
+            background-image: url('{{ asset('user/img/BSC_homepage.jpg') }}');
         }
 
-        .last-content {
-            height: 300px;
-            width: 100%;
-            background-image: url('{{ asset('user/img/homebg.jpg') }}');
-        }
     </style>
 </head>
 
 <body>
     <header>
 
-        <div class="container top-logo">
-            <a href="{{ route('home') }}"><img id="logo" src="{{ asset('user/img/move-abroad.jpeg') }}"
+        <div class=" top-logo">
+            <a href="{{ route('home') }}"><img id="logo" src="{{ asset('user/img/move-abroad.png') }}"
                     alt=""></a>
         </div>
         <div class="underline">
             <nav class="navbar navbar-expand-lg">
 
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 container d-flex justify-content-between ">
-                    <li class="nav-item dropdown">
+
+                    <li class=" nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             BECHELOR
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="{{ route('home') }}">Bachelor Degrees Home</a></li>
-                            <li class="dropdown-item"><b> Bachelors Categories</b></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="{{ route('cat_main') }}">Business & Management</a></li>
-                            <li><a class="dropdown-item" href="#">Marketing & Media</a></li>
-                            <li><a class="dropdown-item" href="#">Law</a></li>
-                            <li><a class="dropdown-item" href="#">Computer Science & IT</a></li>
-                            <li><a class="dropdown-item" href="#">Art & Design</a></li>
-                            <li><a class="dropdown-item" href="#">Engineering & Technology</a></li>
-                            <li><a class="dropdown-item" href="#">Tourism</a></li>
-                            <li><a class="dropdown-item" href="#">Shipping</a></li>
-                            <li><a class="dropdown-item" href="#">Psychology</a></li>
-                            <li><a class="dropdown-item" href="#">Education</a></li>
-                            <li><a class="dropdown-item" href="#">Agri-food</a></li>
-                            <li><a class="dropdown-item" href="#">Summer Programmes</a></li>
-                            <li><a class="dropdown-item" href="#">More</a></li>
-                            <li><a class="dropdown-item" href="#">Institutes</a></li>
-                            <li><a class="dropdown-item" href="#">Contact</a></li>
+                        <ul class="dropdown-menu p-2" id="cat-manu">
+                            <div class="row ">
+                                <div class="col-6">
+                                    <li><a class="dropdown-item dropdown-item2" href="{{ route('home') }}"><i class="fa-solid fa-house-chimney" style="color: #209DE8;"></i> Bachelor Degrees Home</a>
+                                    </li>
+                                    <li class="dropdown-item"><b> Bachelors Categories</b></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a class="dropdown-item" href="{{ url('bussiness') }}">Business & Management</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="{{ url('marcket') }}">Marketing & Media</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('law') }}">Law</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('computer') }}">Computer Science & IT</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="{{ url('art') }}">Art & Design</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('engineer') }}">Engineering &
+                                            Technology</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('tourism') }}">Tourism</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('shipping') }}">Shipping</a></li>
 
+                                </div>
+                                <div class="col-6">
+                                    <li><a class="dropdown-item" href="{{ url('psycho') }}">Psychology</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('education') }}">Education</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('agri') }}">Agri-food</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('summer') }}">Summer Programmes</a></li>
+                                    <span class="px-3"><b>More</b></span>
+                                    <hr class="dropdown-divider">
+                                    <li><a class="dropdown-item" href="{{ route('institute') }}">Institutes</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('contact') }}">Contact</a></li>
+                                </div>
+                            </div>
                         </ul>
                     </li>
 
-                    <li class="nav-item dropdown">
+
+                    <li class=" nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             MASTERS
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#"><b>Bachelor Degrees Home</b></a></li>
-                            <li><b><a class="dropdown-item" href="#">Bachelors Categories</a></b></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Business & Management</a></li>
-                            <li><a class="dropdown-item" href="#">Marketing & Media</a></li>
-                            <li><a class="dropdown-item" href="#">Law</a></li>
-                            <li><a class="dropdown-item" href="#">Computer Science & IT</a></li>
-                            <li><a class="dropdown-item" href="#">Art & Design</a></li>
-                            <li><a class="dropdown-item" href="#">Engineering & Technology</a></li>
-                            <li><a class="dropdown-item" href="#">Tourism</a></li>
-                            <li><a class="dropdown-item" href="#">Shipping</a></li>
-                            <li><a class="dropdown-item" href="#">Psychology</a></li>
-                            <li><a class="dropdown-item" href="#">Education</a></li>
-                            <li><a class="dropdown-item" href="#">Agri-food</a></li>
-                            <li><a class="dropdown-item" href="#">Summer Programmes</a></li>
-                            <li><a class="dropdown-item" href="#">More</a></li>
-                            <li><a class="dropdown-item" href="#">Institutes</a></li>
-                            <li><a class="dropdown-item" href="#">Contact</a></li>
+                        <ul class="dropdown-menu p-2" id="cat-manu">
+                            <div class="row">
+                                <div class="col-6">
+                                    <li> <a class="dropdown-item dropdown-item2" href="{{ route('home') }}"> <i class="fa-solid fa-house-chimney" style="color: #209DE8;"></i>Masters Degrees Home</a>
+                                    </li>
+                                    <li class="dropdown-item"><b> Masters Categories</b></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a class="dropdown-item" href="{{ url('bussiness') }}">Business &
+                                            Management</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('marcket') }}">Marketing & Media</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('law') }}">Law</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('computer') }}">Computer Science & IT</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="{{ url('art') }}">Art & Design</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('engineer') }}">Engineering &
+                                            Technology</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('tourism') }}">Tourism</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('shipping') }}">Shipping</a></li>
 
+                                </div>
+                                <div class="col-6">
+                                    <li><a class="dropdown-item" href="{{ url('psycho') }}">Psychology</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('education') }}">Education</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('agri') }}">Agri-food</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('summer') }}">Summer Programmes</a>
+                                    </li>
+                                    <span class="px-3"><b>More</b></span>
+                                    <hr class="dropdown-divider">
+                                    <li><a class="dropdown-item" href="{{ route('institute') }}">Institutes</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('contact') }}">Contact</a></li>
+                                </div>
+                            </div>
                         </ul>
                     </li>
+
                     <li class="nav-item">
                         <a href="{{ route('intstudent') }}" class="nav-link ">INTERNATIONAL STUDENTS</a>
                     </li>
@@ -119,7 +136,7 @@
     <footer>
         <div class="row footer">
 
-            <div class="col-sm-6 col-md-3"><img id="logo" src="{{ asset('user/img/move-abroad.jpeg') }}"
+            <div class="col-sm-6 col-md-3"><img id="foot-logo" src="{{ asset('user/img/move-abroad.jpeg') }}"
                     alt=""></div>
             <div class="col-sm-6 col-md-3">
 
@@ -151,7 +168,7 @@
             </div>
         </div>
         <div class="footer-end">
-            <p>Study In Greece © 2019 | Terms of Use | Privacy Policy</p>
+            <p>Praxis @ 2023 | Terms of Use | Privacy Policy</p>
 
         </div>
     </footer>

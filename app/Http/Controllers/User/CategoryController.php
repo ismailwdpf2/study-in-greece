@@ -14,4 +14,6 @@ class CategoryController extends Controller
         return view("user.category.bechelor.cat-detail");
     }
 
+
+
 }

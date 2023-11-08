@@ -39,9 +39,9 @@
             </div>
         </div>
         <div class="f-content" >
-            <h3 style="color: #0B3565">Studyingreece.gr - Office</h3>
-            <span>Glinou 32, 54249 Thessaloniki, Greece</span>
-            <p>Email: <a href="#">info@studyingreece.gr</a> | Phone: +30 2310 437 772</p>
+            <h3 style="color: #0B3565; margin-top:10px">Move-Abroad</h3>
+            <span>Room No: 328-329, RH Home Center, Green Road, Farm Gate Dhaka, Bangladesh.</span>
+            <p>Email: <a href="#">moveabroad@gmail.com</a> | Phone: 01721-401920</p>
         </div>
     </div>
 @endsection

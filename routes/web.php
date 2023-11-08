@@ -39,6 +39,7 @@ Route::controller(UserController::class)->group(function () {
     Route::get('intstudent', 'intstudent')->name('intstudent');
     Route::get('living', 'living')->name('living');
     Route::get('contact', 'contact')->name('contact');
+    Route::get('institute', 'institute')->name('institute');
  
 });
 
@@ -46,5 +47,53 @@ Route::controller(CategoryController::class)->group(function(){
     Route::get('cat_main', 'cat_main')->name('cat_main');
     Route::get('cat_detail', 'cat_detail')->name('cat_detail');
 });
+
+// static inner page 
+
+Route::get('bussiness', function () {
+    return view('user.category.static-innerpage.bussi');
+});
+Route::get('finance', function () {
+    return view('user.category.static-innerpage.finance');
+});
+Route::get('marcket', function () {
+    return view('user.category.static-innerpage.marcket');
+});
+Route::get('law', function () {
+    return view('user.category.static-innerpage.law');
+});
+Route::get('computer', function () {
+    return view('user.category.static-innerpage.computer');
+});
+Route::get('art', function () {
+    return view('user.category.static-innerpage.art');
+});
+Route::get('engineer', function () {
+    return view('user.category.static-innerpage.engineer');
+});
+Route::get('tourism', function () {
+    return view('user.category.static-innerpage.tourism');
+});
+Route::get('shipping', function () {
+    return view('user.category.static-innerpage.shipping');
+});
+Route::get('psycho', function () {
+    return view('user.category.static-innerpage.psycho');
+});
+Route::get('education', function () {
+    return view('user.category.static-innerpage.education');
+});
+Route::get('agri', function () {
+    return view('user.category.static-innerpage.agri');
+});
+Route::get('summer', function () {
+    return view('user.category.static-innerpage.summer');
+});
+
+
+
+
+
+
 
 require __DIR__.'/auth.php';

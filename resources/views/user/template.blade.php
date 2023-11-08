@@ -19,7 +19,6 @@
             width: 100%;
             background-image: url('{{ asset('user/img/BSC_homepage.jpg') }}');
         }
-
     </style>
 </head>
 
@@ -43,7 +42,9 @@
                         <ul class="dropdown-menu p-2" id="cat-manu">
                             <div class="row ">
                                 <div class="col-6">
-                                    <li><a class="dropdown-item dropdown-item2" href="{{ route('home') }}"><i class="fa-solid fa-house-chimney" style="color: #209DE8;"></i> Bachelor Degrees Home</a>
+                                    <li><a class="dropdown-item dropdown-item2" href="{{ route('home') }}"><i
+                                                class="fa-solid fa-house-chimney" style="color: #209DE8;"></i> Bachelor
+                                            Degrees Home</a>
                                     </li>
                                     <li class="dropdown-item"><b> Bachelors Categories</b></li>
                                     <hr class="dropdown-divider">
@@ -83,7 +84,9 @@
                         <ul class="dropdown-menu p-2" id="cat-manu">
                             <div class="row">
                                 <div class="col-6">
-                                    <li> <a class="dropdown-item dropdown-item2" href="{{ route('home') }}"> <i class="fa-solid fa-house-chimney" style="color: #209DE8;"></i>Masters Degrees Home</a>
+                                    <li> <a class="dropdown-item dropdown-item2" href="{{ route('home') }}"> <i
+                                                class="fa-solid fa-house-chimney" style="color: #209DE8;"></i>Masters
+                                            Degrees Home</a>
                                     </li>
                                     <li class="dropdown-item"><b> Masters Categories</b></li>
                                     <hr class="dropdown-divider">
@@ -136,21 +139,20 @@
     <footer>
         <div class="row footer">
 
-            <div class="col-sm-6 col-md-3"><img id="foot-logo" src="{{ asset('user/img/move-abroad.jpeg') }}"
-                    alt=""></div>
-            <div class="col-sm-6 col-md-3">
+            <div class="col-sm-5 col-md-3"><img id="foot-logo" src="{{ asset('user/img/move-abroad.jpeg') }}"
+                    alt="">
+            </div>
+            <div class="col-sm-5 col-md-3 mx-2">
 
-                <ul>
-                    <li>
-                        <h5>Move Abroad</h5>
-                    </li>
+                <ul>                
+                    <li><h5>Move Abroad</h5></li> 
                     <li>Bachelors</li>
                     <li>Masters</li>
                     <li>Search for Degrees</li>
                     <li>Find Seminars in Greece</li>
                 </ul>
             </div>
-            <div class="col-sm-6 col-md-3">
+            <div class="col-sm-5 col-md-3">
                 <ul>
                     <li>
                         <h5>Useful Info</h5>
@@ -161,7 +163,7 @@
                     <li>Contact</li>
                 </ul>
             </div>
-            <div class="col-sm-6 col-md-3">
+            <div class="col-sm-5 col-md-2">
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-twitter mx-2"></i>
                 <i class="fa-brands fa-linkedin"></i>

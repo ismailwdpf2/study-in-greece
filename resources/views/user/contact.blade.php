@@ -22,7 +22,6 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-
                     <div class="form-group my-3">
                         <input type="text" class="form-control" id="city" placeholder="City">
                     </div>
@@ -38,7 +37,7 @@
                 </div>
             </div>
         </div>
-        <div class="f-content" >
+        <div class="f-content">
             <h3 style="color: #0B3565; margin-top:10px">Move-Abroad</h3>
             <span>Room No: 328-329, RH Home Center, Green Road, Farm Gate Dhaka, Bangladesh.</span>
             <p>Email: <a href="#">moveabroad@gmail.com</a> | Phone: 01721-401920</p>

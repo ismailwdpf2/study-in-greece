@@ -1,63 +1,96 @@
-body{
-    font-family: sans-serif;
+body {
+    font-family: "LatoWeb", Helvetica, Arial, sans-serif;
 }
+
 .nav-link:hover {
     color: rgb(7, 68, 175) !important;
 }
-.top-logo{
+
+.top-logo {
     height: 138px;
     margin-left: 30px !important;
 }
-#logo{
+
+#logo {
 
     height: 100px;
-    width: 310px;
+    width: 300px;
     margin: 10px;
     overflow: hidden;
 }
+
+.navbar-nav {
+    margin-left: 86px;
+    
+}
+
+.nav-item {
+    font-size: 15px;
+    letter-spacing: .05em;
+}
+
 .fixed-nav {
     position: fixed;
     top: 0;
-    height: 52px;
+    height: 45px;
     width: 100%;
     z-index: 100;
-    background: #fff; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
-.underline{
+.underline {
     border-top: 1px solid #D2D6DF;
-    border-bottom: 1px solid #D2D6DF; 
+    border-bottom: 1px solid #D2D6DF;
 }
+
 .home_header {
     color: white;
     align-items: center;
-    padding-top: 255px;
-    
-}
-.home_header > h1 {
-    font-size: 59px;
-    line-height: 71px;
-    font-weight: 400;
+    padding-top: 250px;
+
 }
 
+.home_header>h1 {
+    font-size: 50px;
+    line-height: 65px;
+    font-weight: 300;
+    font-family: inherit;
+}
 
 .bcat {
     text-align: center;
     color: rgb(0, 0, 12);
-    margin-top: 90px;
+    margin-top: 55px;
     margin-bottom: 30px;
-}
-#cat-manu{
-    width: 900px !important;
+    color: #0B3565;
 }
 
-.dropdown-item:hover{
+.dropdown {
+    position: relative;
+}
+.dropdown-menu {
+    height: 396px;
+    width: 1165px;
+    padding: 30px;
+    margin-top: 8px !important;
+    letter-spacing: 0.04em;
+    position: absolute;
+}
+
+.dropdown :hover .dropdown-menu {
+
+    display: block;
+}
+
+.dropdown-item:hover {
+    color: #20A2EA;   
+}
+
+.dropdown-item2 {
     color: #209DE8;
 }
-.dropdown-item2{
-    color: #209DE8;
-}
-.dropdown-item2:hover{
+
+.dropdown-item2:hover {
     color: #FB3807;
 }
 
@@ -69,23 +102,33 @@ body{
     background-color: #0b3565;
     color: white;
 }
-#foot-logo{
+
+#foot-logo {
     height: 100px;
-    width: 260px;
-    margin: 10px;
-    margin-left: 85px;
+    width: 200px;
+    margin-left: 96px;
     overflow: hidden;
 }
-.footer-end{
+
+.footer-end {
     height: 50px;
-    padding: 10px;
+    font-size: small;
+    padding-left: 96px;
+    padding-top: 15px;
     color: white;
     background-color: #090D11;
 
 }
-*a{
+
+.ft-icon {
+    width: 30px;
+    font-size: x-large !important;
+}
+
+*a {
     text-decoration: none;
 }
+
 ul li {
     list-style: none;
 }
@@ -104,128 +147,215 @@ ul li {
     text-align: center;
 }
 
-.thumbnail :hover{
+.thumbnail :hover {
     color: #FB3807;
 }
 
-.homecat-icon{
+.homecat-icon {
     margin-left: 80px;
 
 }
+
 .cat-svg :hover {
     fill: #FB3807 !important;
 }
+
 .city-pic {
     height: 250px;
     width: 250px;
     margin: 10px;
 }
+
 .last-content {
     color: white;
 }
+
 .cat-svg {
     overflow: hidden;
     height: 40px;
     width: 40px;
     margin: 10px;
 }
-.img-city{
+
+.img-city {
     position: relative;
-    text-align: center;
+
 }
-.title{
+
+.title {
+    /* text-align: center; */
     position: absolute;
     bottom: 10px;
     margin-bottom: 5px;
     font-size: 22px;
     color: white;
-    left: 20px;
+    left: 30px;
 }
+
 /* contact */
-.contact{
+.contact {
     margin: 20px;
     margin-top: 40px;
     text-align: center;
 }
-.contact-form{
+
+.contact-form {
     width: 900px;
     margin: auto;
     background-color: #F8F8FA;
     border: 1px solid #D2D6DF;
     align-items: center;
 }
-.contact-item{
+
+.contact-item {
     width: 800px;
     margin: auto;
 }
-.send-mssg{
-    align-items:end;
+
+.send-mssg {
+    align-items: end;
 }
-.f-content{
+
+.f-content {
     margin-left: 105px;
 }
+
 /* living */
-.iframe{
+.iframe {
     text-align: center;
     margin: 10px;
 }
-.list-item{
+
+.list-item {
     font-size: 14px;
 }
-  .list-item li{
-    list-style: disc;
-  }
 
-  /* category */
-  .cat-main{
+.list-item li {
+    list-style: disc;
+}
+
+/* category */
+.cat-main {
     height: 250px;
     background-color: #0B3565;
-  }
-  
-  /* category page */
-  .college-card{
+}
+
+#sponsorby {
+    padding-top: 50px !important;
+}
+
+/* category page */
+#inner-card{
+    margin-left: 88px;
+    margin-right: 95px;
+    font-size: small;
+}
+a{
+    text-decoration: none;
+}
+.college-card {
     width: 380px;
     height: 100px;
     background-color: #FFFFFF;
     border-radius: 5px;
     margin-left: 10px;
-  }
-  .cat-sidebar{
-    border: 1px solid #D2D6DF ;
-    height: 400px;
+}
+.inner-tittle{
+    margin-top: 25px;
+    font-weight: 170;
+    letter-spacing: 0.06rem;
+}
+.post-tittle{
+    text-decoration: none;
+    letter-spacing: 0.06rem;
+    color: #0b3565;
+    font-weight: 500;
+}
+.post-tittle:hover{
+    color: #FB3807;
+}
+.inner-lyout{
+    margin-left: 106px;
+    margin-right: 95px;
+    width: 1180px;
+    align-items: center;
+}
+.cat-postbar{
+    width: 875px;
+    margin-left: 14px;
+}
+.cat-sidebar {
+    border: 1px solid #D2D6DF;
+    height: 410px;
+    width: 280px;
+    margin-top: 15px;
+    letter-spacing: 0.05rem;
     border-radius: 5px;
     background-color: #F8F8FA;
-  }
-  .cat-postarea{
+}
+.nav-item, label{
+margin-top: 12px;
+color: #25323F;
+}
+.cat-postarea {
     border: 1px solid #D2D6DF;
     height: 270px;
+    padding: 30px;
     border-radius: 5px;
     background-color: #F8F8FA;
-  }
-  selected{
+    font-size: small;
+}
+
+select{
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 2px;
+    color: white;
+    background-color: #2078DB;
+   }
+   option{
+    background-color: white;
+    color: black;
+   }
+   span{
+    color: #2078DB;
+    margin-right: 16px;
+   }
+
+selected {
     background-color: blue;
     color: white;
-  }
+}
 
-  /* details page */
-  .detail-top{
+.cat-footer{
+    height: 200px;
+    background-color: #0B3565;
+}
+.cat-footer-card{
+    margin-left: 480px;
+    width: 380px;
+}
+/* details page */
+.detail-top {
     height: 375px;
     background-color: #0B3565;
-  }
+}
 
-.dtl-banner{
+.dtl-banner {
     height: 314px;
     overflow: hidden;
     margin-top: 15px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
-.dtl-img{
+
+.dtl-img {
     height: 270;
     width: 400px;
 }
 
-.college-card{
+.college-card {
     height: 110px;
     width: 100%;
     margin-top: 10px;
@@ -233,72 +363,77 @@ ul li {
     border: 1px solid #D2D6DF;
     border-radius: 5px;
 }
-.shareicon{
+
+.shareicon {
     border: 1px solid #D2D6DF;
     border-radius: 2px;
     margin: 8px;
     padding: 10px;
 }
-.icon-card{
+
+.icon-card {
     height: 60px;
-    border:1px solid #D2D6DF ;
+    border: 1px solid #D2D6DF;
     border-radius: 5px;
     background-color: #F8F8FA;
     padding-top: 15px;
 
 }
 
-.icon-card span{
+.icon-card span {
     margin: 10px;
     padding: 5px;
     font-size: small;
     color: #090D11;
     font-weight: 700;
 }
-.dtl-main{
-    border:1px solid #D2D6DF ;
+
+.dtl-main {
+    border: 1px solid #D2D6DF;
     border-radius: 5px;
     font-size: small;
     padding: 10px;
-    
+
 }
 
-.dtl-sidebar{
-    border:1px solid #D2D6DF ;
+.dtl-sidebar {
+    border: 1px solid #D2D6DF;
     border-radius: 5px;
     height: 110px;
     width: 280px;
     font-size: small;
-    text-align: center;  
-    padding: 10px; 
+    text-align: center;
+    padding: 10px;
 }
-.dtl-cform{
+
+.dtl-cform {
     width: 280px;
-    padding: 10px; 
+    padding: 10px;
     background-color: #0B3565;
-    font-size:small;
-    text-align: center;  
+    font-size: small;
+    text-align: center;
     color: #FFFFFF;
     margin: auto;
     margin-top: 10px;
     border-radius: 10px;
 }
-.dtl-cform input{
+
+.dtl-cform input {
     font-size: small;
 }
 
 /* institute-card */
-.institute-top{
-    
+.institute-top {
+
     margin-left: 5px;
 }
 
-.institute-main{
-margin-left: 85px;
-margin-right: 85px;
+.institute-main {
+    margin-left: 85px;
+    margin-right: 85px;
 }
 
-.institute{
+.institute {
     padding: 10px;
     border: 1px solid #D2D6DF;
     border-radius: 5px;

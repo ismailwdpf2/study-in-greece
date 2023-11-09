@@ -15,7 +15,6 @@
             font-size: small;
         }
     </style>
-
     <div>
         <section>
             <div class="home_header">
@@ -46,7 +45,6 @@
                             <li><a class="dropdown-item" href="#">Contact</a></li>
                         </ul>
                     </div>
-
                     <div class="dropdown mx-3 ">
                         <button class="btn btn-light dropdown-toggle px-5" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -62,7 +60,6 @@
                 </div>
             </div>
         </section>
-
         <section class="">
             <h3 class="bcat">Bachelor degrees Category</h3>
             <div class="row homecat-icon">
@@ -194,9 +191,7 @@
                     </a>
                 </div>
             </div>
-
         </section>
-
         <section>
             <h3 class="bcat">Bechelor degrees by City</h3>
             <div class="city d-flex justify-content-center">
@@ -209,7 +204,7 @@
                 <div class="img-city">
                     <img class="city-pic" src="{{ asset('user/img/campus (2).jpg') }}" alt="">
                     <div class="title">
-                       EBS college
+                        EBS college
                     </div>
                 </div>
                 <div class="img-city">
@@ -218,8 +213,6 @@
                         MEDI college
                     </div>
                 </div>
-                
-               
             </div>
         </section>
         <section class="last-content py-5  ">

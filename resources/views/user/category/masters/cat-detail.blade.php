@@ -1,6 +1,5 @@
 @extends('user.template')
 @section('usercontent')
-
     <div>
         <div class="detail-top">
             <p class="text-white mx-5 p-2">Masters| Business Management|</p>
@@ -8,11 +7,8 @@
                 <div class="container dtl-banner bg-white d-flex">
                     <div><b>Masters:</b>
                         <p>Marketing & Media</p>
-
                         <h1>BA (Hons) Business Management (Marketing)</h1>
-
                         <div class="my-5">
-
                             <div>
                                 <p> Share it:</p>
                                 <a href="#"><i class="shareicon fa-brands fa-facebook" style="color: #075ef2;"></i></a>
@@ -25,16 +21,13 @@
                                         style="color: #2cd84e;"></i></a>
 
                             </div>
-
                         </div>
                     </div>
-
                     <div class="dtl-img">
                         <img src="{{ asset('user/img/marketing_epik_B.jpg') }}" alt="">
                     </div>
                 </div>
             </div>
-
         </div>
         <div class="container">
             <div class="college-card d-flex justify-content-between">
@@ -46,12 +39,10 @@
                         <a href="#">See all Bachelors offered by this institute</a>
                     </div>
                 </div>
-
                 <div class="p-4 mx-5">
                     <a href=""><i class="fa-solid fa-square-phone"></i></a> +88 210 600 9800
                 </div>
             </div>
-
             <div class="icon-card my-2">
                 <span><i class="fa-solid fa-location-dot"></i> Athens, Thessaloniki</span>
                 <span> <i class="fa-regular fa-calendar"></i> February 2024, October 2024</span>
@@ -61,19 +52,16 @@
                 <span><i class="fa-solid fa-earth-americas"></i> Greek, English</span>
             </div>
         </div>
-
-
-        <div class="container" >
+        <div class="container">
             <div class=" row">
-
-                <div class="col-8 mx-2" >
+                <div class="col-8 mx-2">
                     <div class="dtl-main">
                         <div class="mx-4">
                             <span style="color: #0B3565">ENTRY REQUIREMENTS</span>
                             <br>
                             <p><b>Greek students</b></p>
                         </div>
-                        <ul >
+                        <ul>
                             <li style="list-style: disc;">
                                 One letter of recommendation from teacher/professor of last institution attended; letter
                                 from private tutor is not accepted.
@@ -98,7 +86,6 @@
                                 designated College representative after all application materials have been submitted.
                             </li>
                         </ul>
-
                         <div class="mx-4">
                             <span><b>merican Students</b></span> <br>
                             <span>First Year Students</span>
@@ -114,71 +101,69 @@
                                 Completed online application form.
                             </li>
                             <li style="list-style: disc;">
-                                A 250-300 word personal statement which addresses how studying at ACG will further your life goals. The essay can be completed online along with the application form
+                                A 250-300 word personal statement which addresses how studying at ACG will further your life
+                                goals. The essay can be completed online along with the application form
                             </li>
                             <li style="list-style: disc;">
                                 Official transcripts.
                             </li>
                             <li>
                                 One academic letter of recommendation.
-                            </li >
+                            </li>
                             <li style="list-style: disc;">
                                 Copy of passport.
                             </li>
                         </ul>
                     </div>
                 </div>
-
-
                 <div class="col-3">
                     <div class="dtl-sidebar">
                         <p style="color: #0B3565">TUITION FEES</p>
                         <span> For information regarding student fees please contact the Institute.</span>
                     </div>
-                     
-                    <div class="dtl-cform" >
+
+                    <div class="dtl-cform">
                         <div>
                             <h5>Contact Us</h5>
-                        <p>Interested? Fill in the contact form and an advisor from the Institute will get in touch with you shortly.</p>
+                            <p>Interested? Fill in the contact form and an advisor from the Institute will get in touch with
+                                you shortly.</p>
                         </div>
-                        
+                        <form action="#" method="post">
 
-                    <form action="#" method="post">
+                            <div class="form-group my-1">
+                                <input class="form-control" type="text" name="full_name" placeholder="Full Name*"
+                                    required>
+                            </div>
 
-                        <div class="form-group my-1">
-                            <input class="form-control" type="text" name="full_name" placeholder="Full Name*" required>
-                        </div>
-
-                        <div class="form-group my-1">
-                            <input class="form-control" type="tel" name="phone" placeholder="Phone*" required>
-                        </div>
-                        <div class="form-group my-1">
-                            <input class="form-control" type="email" name="email" placeholder="E-mail*" required>
-                        </div>
-                        <div class="form-group my-1">
-                            <input class="form-control" type="text" name="nationality" placeholder="Nationality*" required>
-                        </div>
-                        <div class="form-group my-1">
-                            <input class="form-control" type="text" name="location" placeholder="I live in*" required>
-                        </div>
-                        <div class="form-group my-1">
-                            <input class="form-control" type="text" name="Desired" placeholder="Desired Start*" required>
-                        </div>
-                        <div class="form-group my-1">
-                            <textarea class="form-control" name="" id="" cols="30" rows="3">Question to the Instituion</textarea>
-                        </div>
-                        <div class="form-group text-right">
-                            <button class="send-mssg btn btn-danger px-3">Send</button>
-                        </div>
-
-
-                    </form>
+                            <div class="form-group my-1">
+                                <input class="form-control" type="tel" name="phone" placeholder="Phone*" required>
+                            </div>
+                            <div class="form-group my-1">
+                                <input class="form-control" type="email" name="email" placeholder="E-mail*" required>
+                            </div>
+                            <div class="form-group my-1">
+                                <input class="form-control" type="text" name="nationality" placeholder="Nationality*"
+                                    required>
+                            </div>
+                            <div class="form-group my-1">
+                                <input class="form-control" type="text" name="location" placeholder="I live in*"
+                                    required>
+                            </div>
+                            <div class="form-group my-1">
+                                <input class="form-control" type="text" name="Desired" placeholder="Desired Start*"
+                                    required>
+                            </div>
+                            <div class="form-group my-1">
+                                <textarea class="form-control" name="" id="" cols="30" rows="3">Question to the Instituion</textarea>
+                            </div>
+                            <div class="form-group text-right">
+                                <button class="send-mssg btn btn-danger px-3">Send</button>
+                            </div>
+                        </form>
                     </div>
-
                 </div>
             </div>
         </div>
-
     </div>
     <br>
 @endsection

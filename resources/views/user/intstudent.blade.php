@@ -3,7 +3,6 @@
 <div class="container">
     <h3 class="text-center my-5">International Students</h3>
     <b><p>Why study in Greece?</p></b>
-
     <p>The geo-political position of Greece puts her in the centre of attention in the south-eastern part of Europe. As a nodal point and entrance gate of the European Union, it is characterized by intense activation of not only Greek but also multinational companies in neuralgic financial sectors such as commerce, tourism and offering of services. The recruitment of these companies is in a great percentage made by the graduates of the country’s educational institutions that are distinguished by the high educational level that they provide. Education which is mainly related to the market’s trends, proportionally to the numerous years of experience of these institutions and their affiliations with other top European and American universities. By studying in Greece, you acquire not only the infrastructure needed for a successful professional career but also all the qualifications for further studies.
     </p>
     <b><p>Study Options</p></b>
@@ -16,7 +15,6 @@
 <ul class="list-item">
     <li><a href="#">Ministry of Foreign Affairs</a></li>
 </ul>
-
 <b><p>Checklist</p></b>
 <p>When you have made the decision to go study in Greece,you will need to prepare your stay.This section will guide you through all the steps you need to take before leaving home.As an international student you need to arrange quite a lot of things for an untroubled stay in Greece.You will probably need a visa and/or a residence permit.In addition,you must make sure you have adequate health insurance,arrange for accommodation and have proper funding for your stay.Using the checklist below you can easily see whick preparations you need to make.Dont forget to applie to the office of Student Care of each education institution to get further information.</p>
 <b><p>Dont forget</p></b>
@@ -33,14 +31,12 @@
     <li>Admission</li>
     <li>Follow Study in Greece</li>
 </ul>
-
 <b><p>What to study</p></b>
 <p>Check out the Bachelor and Master programs offered in Greece clicking on the links below. Call directly the institutions or simply fill in the contact form and a representative will contact you shortly.</p>
 
 <ul class="list-item my-4">
     <li><a href="#">Click here to see all the Bachelor programs offered in Greece</a></li>
-    <li><a href="#">Click here to see all the Master programs offered in Greece</a></li>
-   
+    <li><a href="#">Click here to see all the Master programs offered in Greece</a></li> 
 </ul>
 </div>
 @endsection

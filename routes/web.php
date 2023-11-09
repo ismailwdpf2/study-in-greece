@@ -40,10 +40,9 @@ Route::controller(UserController::class)->group(function () {
     Route::get('living', 'living')->name('living');
     Route::get('contact', 'contact')->name('contact');
     Route::get('institute', 'institute')->name('institute');
- 
 });
 
-Route::controller(CategoryController::class)->group(function(){
+Route::controller(CategoryController::class)->group(function () {
     Route::get('cat_main', 'cat_main')->name('cat_main');
     Route::get('cat_detail', 'cat_detail')->name('cat_detail');
 });
@@ -96,4 +95,4 @@ Route::get('summer', function () {
 
 
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';

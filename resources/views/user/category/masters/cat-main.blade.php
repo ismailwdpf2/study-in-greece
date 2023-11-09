@@ -92,8 +92,6 @@
                 </div>              
             </div>
 
-
-
             <div class="col-9">
                 <div class=" cat-postarea my-3 p-3">
                     <div>
@@ -159,10 +157,8 @@
                     <p> Institute: <span>Mediterranean College</span></p>
                     <a href="{{route("cat_detail")}}"><button class="btn btn-danger px-4">more</button></a>
                     </div>
-                 </div>
-                
-            </div>
-            
+                 </div>                
+            </div>         
         </div>
     </div>
 

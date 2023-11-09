@@ -11,11 +11,16 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="{{ asset('user/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('user/font/fl-bigmug-line.woff') }}">
+    <link rel="stylesheet" href="{{ asset('user/font/fontawesome-webfont.woff2') }}">
+    <link rel="stylesheet" href="{{ asset('user/font/Lato-Regular.woff2') }}">
     <title>move-abroad</title>
     <style>
         .home_header {
-            height: 460px;
+            height: 458px;
             width: 100%;
             background-image: url('{{ asset('user/img/BSC_homepage.jpg') }}');
         }
@@ -23,23 +28,20 @@
 </head>
 
 <body>
-    <header>
-
+    <div>
         <div class=" top-logo">
             <a href="{{ route('home') }}"><img id="logo" src="{{ asset('user/img/move-abroad.png') }}"
                     alt=""></a>
         </div>
         <div class="underline">
             <nav class="navbar navbar-expand-lg">
-
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 container d-flex justify-content-between ">
-
                     <li class=" nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            BECHELOR
+                            BACHELOR
                         </a>
-                        <ul class="dropdown-menu p-2" id="cat-manu">
+                        <ul class="dropdown-menu " class="cat-manu">
                             <div class="row ">
                                 <div class="col-6">
                                     <li><a class="dropdown-item dropdown-item2" href="{{ route('home') }}"><i
@@ -59,7 +61,6 @@
                                             Technology</a></li>
                                     <li><a class="dropdown-item" href="{{ url('tourism') }}">Tourism</a></li>
                                     <li><a class="dropdown-item" href="{{ url('shipping') }}">Shipping</a></li>
-
                                 </div>
                                 <div class="col-6">
                                     <li><a class="dropdown-item" href="{{ url('psycho') }}">Psychology</a></li>
@@ -74,14 +75,13 @@
                             </div>
                         </ul>
                     </li>
-
-
+                   
                     <li class=" nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             MASTERS
                         </a>
-                        <ul class="dropdown-menu p-2" id="cat-manu">
+                        <ul class="dropdown-menu " class="cat-manu">
                             <div class="row">
                                 <div class="col-6">
                                     <li> <a class="dropdown-item dropdown-item2" href="{{ route('home') }}"> <i
@@ -117,7 +117,7 @@
                             </div>
                         </ul>
                     </li>
-
+                    
                     <li class="nav-item">
                         <a href="{{ route('intstudent') }}" class="nav-link ">INTERNATIONAL STUDENTS</a>
                     </li>
@@ -127,25 +127,27 @@
                     <li class="nav-item">
                         <a href="{{ route('contact') }}" class="nav-link">CONTACT</a>
                     </li>
-                    <i class="fa-solid fa-magnifying-glass"
-                        style=" color:white; background: #fb3807; border-radius:50%; padding:10px;  margin-left: 50px"></i>
+                   <div id="menu-search">
+                    <i  class="fa-solid fa-magnifying-glass "
+                    style=" color:white; background: #fb3807; border-radius:50%; padding:12px;  margin-left: 50px"></i>
+                   </div>
                 </ul>
-
             </nav>
         </div>
-    </header>
+    </div>
+
     @yield('usercontent')
 
     <footer>
         <div class="row footer">
-
             <div class="col-sm-5 col-md-3"><img id="foot-logo" src="{{ asset('user/img/move-abroad.jpeg') }}"
                     alt="">
             </div>
             <div class="col-sm-5 col-md-3 mx-2">
-
-                <ul>                
-                    <li><h5>Move Abroad</h5></li> 
+                <ul>
+                    <li>
+                        <h6>Move Abroad</h6>
+                    </li>
                     <li>Bachelors</li>
                     <li>Masters</li>
                     <li>Search for Degrees</li>
@@ -155,7 +157,7 @@
             <div class="col-sm-5 col-md-3">
                 <ul>
                     <li>
-                        <h5>Useful Info</h5>
+                        <h6>Useful Info</h6>
                     </li>
                     <li>Living in Greece</li>
                     <li>International Students</li>
@@ -164,14 +166,13 @@
                 </ul>
             </div>
             <div class="col-sm-5 col-md-2">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-twitter mx-2"></i>
-                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-facebook ft-icon"></i>
+                <i class="fa-brands fa-twitter ft-icon mx-2"></i>
+                <i class="fa-brands fa-linkedin ft-icon"></i>
             </div>
         </div>
         <div class="footer-end">
-            <p>Praxis @ 2023 | Terms of Use | Privacy Policy</p>
-
+            <p>Move Abroad @ 2023 | Terms of Use | Privacy Policy</p>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

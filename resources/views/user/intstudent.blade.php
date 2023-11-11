@@ -1,6 +1,6 @@
 @extends('user.template')
 @section('usercontent')
-<div class="container">
+<div class="international">
     <h3 class="text-center my-5">International Students</h3>
     <b><p>Why study in Greece?</p></b>
     <p>The geo-political position of Greece puts her in the centre of attention in the south-eastern part of Europe. As a nodal point and entrance gate of the European Union, it is characterized by intense activation of not only Greek but also multinational companies in neuralgic financial sectors such as commerce, tourism and offering of services. The recruitment of these companies is in a great percentage made by the graduates of the country’s educational institutions that are distinguished by the high educational level that they provide. Education which is mainly related to the market’s trends, proportionally to the numerous years of experience of these institutions and their affiliations with other top European and American universities. By studying in Greece, you acquire not only the infrastructure needed for a successful professional career but also all the qualifications for further studies.

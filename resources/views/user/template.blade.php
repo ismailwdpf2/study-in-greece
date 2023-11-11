@@ -34,8 +34,12 @@
                     alt=""></a>
         </div>
         <div class="underline">
-            <nav class="navbar navbar-expand-lg">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 container d-flex justify-content-between ">
+          
+            <nav class="navbar navbar-expand-lg " >
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <ul class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <li class=" nav-item dropdown">
                         <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -127,10 +131,12 @@
                     <li class="nav-item">
                         <a href="{{ route('contact') }}" class="nav-link">CONTACT</a>
                     </li>
-                   <div id="menu-search">
-                    <i  class="fa-solid fa-magnifying-glass "
-                    style=" color:white; background: #fb3807; border-radius:50%; padding:12px;  margin-left: 50px"></i>
-                   </div>
+                   
+                    <li class="nav-item" >
+                        <i  class="fa-solid fa-magnifying-glass"
+                        style=" color:white; background: #fb3807; border-radius:50%; padding:12px;  margin-left: 50px"></i>
+                    </li>
+                                  
                 </ul>
             </nav>
         </div>

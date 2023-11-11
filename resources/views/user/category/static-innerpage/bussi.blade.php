@@ -35,8 +35,9 @@
         </div>
     </div>
     <div>
-        <h3 class="text-center inner-tittle"> <img style="height: 35px; margin-bottom:3px" src="{{ asset("user/img/business-management-.svg") }}" alt="">&nbsp; Bechelor: Business & Management</h3>
+    <h3 class="inner-tittle"><img style="height: 35px; margin-bottom:3px" src="{{ asset("user/img/business-management-.svg") }}" alt="">&nbsp;&nbsp;Bachelor: Business & Management</h3>
     </div>
+    <span style="padding-left:700px; line-height:10px; margin-0;color:#333333;">24 Bachelor degrees found</span>
     <div class="inner-lyout" class="">
         <div class=" row">
             <div class="cat-sidebar d-fluid px-4">
@@ -105,14 +106,14 @@
                         Marketing is constantly developing. BA (Hons) Business (Marketing) helps participants comprehend the fundamental principles of marketing so as to be able to adjust and keep up with the constant changes. The business marketing p...
                     </div>
                     <div class="d-flex justify-content-between">
-                    <p> Institute: <span>Mediterranean College</span></p>
+                    <p class="institute-end"> Institute: <span>Mediterranean College</span></p>
                     <a href="{{route("cat_detail")}}"><button class="btn btn-danger px-4">more</button></a>
 
                     </div>
                  </div>
                 <div class="cat-postarea my-3">
                     <div>
-                        <h5>BA (Hons) Business Management</h5>
+                        <h5><a class="post-tittle" href="#">BSc (Hons) in Business Administration (Accounting with Finance pathway)</a></h5>
                         <span><i class="fa-solid fa-location-dot" style="color: #2078DB;"></i> Athens, Thessaloniki</span>
                         <span> <i class="fa-regular fa-calendar" style="color: #2078DB;"></i> February 2024, October 2024</span>
                         <span> <i class="fa-regular fa-hourglass-half" style="color: #2078DB;"></i> 3 years</span>
@@ -127,14 +128,15 @@
                         Marketing is constantly developing. BA (Hons) Business (Marketing) helps participants comprehend the fundamental principles of marketing so as to be able to adjust and keep up with the constant changes. The business marketing p...
                     </div>
                     <div class="d-flex justify-content-between">
-                    <p> Institute: <span>Mediterranean College</span></p>
+                    <p class="institute-end"> Institute: <span>Mediterranean College</span></p>
                     <a href="{{route("cat_detail")}}"><button class="btn btn-danger px-4">more</button></a>
 
                     </div>
                  </div>
                 <div class="cat-postarea my-3">
+                    
                     <div>
-                        <h5>BA (Hons) Business Management</h5>
+                        <h5><a class="post-tittle" href="#">BSc (Hons) in Business Administration (Accounting with Finance pathway)</a></h5>
                         <span><i class="fa-solid fa-location-dot" style="color: #2078DB;"></i> Athens, Thessaloniki</span>
                         <span> <i class="fa-regular fa-calendar" style="color: #2078DB;"></i> February 2024, October 2024</span>
                         <span> <i class="fa-regular fa-hourglass-half" style="color: #2078DB;"></i> 3 years</span>
@@ -149,14 +151,25 @@
                         Marketing is constantly developing. BA (Hons) Business (Marketing) helps participants comprehend the fundamental principles of marketing so as to be able to adjust and keep up with the constant changes. The business marketing p...
                     </div>
                     <div class="d-flex justify-content-between">
-                    <p> Institute: <span>Mediterranean College</span></p>
+                    <p class="institute-end" > Institute: <span>Mediterranean College</span></p>
                     <a href="{{route("cat_detail")}}"><button class="btn btn-danger px-4">more</button></a>
                     </div>
-                 </div>
-                
-            </div>
-            
+                 </div>                
+            </div>           
         </div>
+    </div>
+
+    <div aria-label="Page navigation">
+        <ul class="pagination justify-content-end">
+          <li class="page-item">
+            <a class="page-link" href="#">Previous</a>
+          </li>
+          <li class="page-item"><a href="#">1</a></li>&nbsp;
+          <li class="page-item"><a href="#">2</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
     </div>
 
 <div class="cat-footer">

@@ -1,6 +1,6 @@
 @extends('user.template')
 @section('usercontent')
-    <div class="container">
+    <div class="living-content">
         <h3 class="text-center my-5">Living in Greece</h3>
         <p>
             Choosing Greece as your studies’ country constitutes a choice with lots of perspectives. The cities of Athens

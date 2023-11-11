@@ -1,20 +1,28 @@
 @extends('user.template')
 @section('usercontent')
-    <style>
-        .last-content {
-            height: 310px;
-            padding-top: 10px;
-            margin-top: 40px;
-            width: 100%;
-            background-image: url('{{ asset('user/img/homebg.jpg') }}');
-        }
+   <style>
+    .home_header {
+    color: white;
+    align-items: center;
+    padding-top: 250px;
+    height: 458px;
+    width: 100%;
+    background-image: url('{{ asset('user/img/BSC_homepage.jpg') }}');
 
-        a {
-            text-decoration: none !important;
-            color: #000;
-            font-size: small;
-        }
-    </style>
+}
+.last-content {
+    height: 310px;
+    padding-top: 10px;
+    margin-top: 40px;
+    width: 100%;
+    background-image: url('{{ asset('user/img/homebg.jpg') }}');
+}
+a {
+    text-decoration: none !important;
+    color: #000;
+    font-size: small;
+}
+   </style>
     <div>
         <section>
             <div class="home_header">
@@ -194,20 +202,20 @@
         </section>
         <section>
             <h3 class="bcat">Bechelor degrees by City</h3>
-            <div class="city d-flex justify-content-center">
-                <div class="img-city">
+            <div class="row city d-flex justify-content-center">
+                <div class="col-sm-11 col-md-3 img-city">
                     <img class="city-pic" src="{{ asset('user/img/campus (1).jpeg') }}" alt="">
                     <div class="title">
                         UsI college
                     </div>
                 </div>
-                <div class="img-city">
+                <div class="col-sm-11 col-md-3 img-city">
                     <img class="city-pic" src="{{ asset('user/img/campus (2).jpg') }}" alt="">
                     <div class="title">
                         EBS college
                     </div>
                 </div>
-                <div class="img-city">
+                <div class="col-sm-11 col-md-3 img-city">
                     <img class="city-pic" src="{{ asset('user/img/campus (5).jpg') }}" alt="">
                     <div class="title">
                         MEDI college

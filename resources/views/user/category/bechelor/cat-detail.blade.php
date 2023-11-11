@@ -10,7 +10,7 @@
                         <h1>BA (Hons) Business Management (Marketing)</h1>
                         <div class="my-5">
                             <div>
-                                <p> Share it:</p>
+                                <p> Share it</p>
                                 <a href="#"><i class="shareicon fa-brands fa-facebook" style="color: #075ef2;"></i></a>
                                 <a href="#"><i class="shareicon fa-brands fa-facebook-messenger"
                                         style="color: #0459ec;"></i></a>

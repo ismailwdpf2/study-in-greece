@@ -20,6 +20,8 @@ Route::get('/', function () {
     return view('user.home');
 });
 
+// =====admin=========
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
@@ -28,6 +30,14 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
+
+Route::middleware(['auth'])->group(function () {
+    Route::controller(ClinteController::class)->group(function () {
+        Route::get('/category/{id}/{slug}', 'categorypage')->name('category');
+        Route::get('product-detail/{id}', 'singlepage')->name('singlepage');
+        Route::get('add-to-cart', 'addtocart')->name('addtocart');
+    });
 });
 
 // user_route......
@@ -46,8 +56,6 @@ Route::controller(CategoryController::class)->group(function () {
     Route::get('cat_main', 'cat_main')->name('cat_main');
     Route::get('cat_detail', 'cat_detail')->name('cat_detail');
 });
-
-
 
 // static inner page 
 
@@ -90,11 +98,6 @@ Route::get('agri', function () {
 Route::get('summer', function () {
     return view('user.category.static-innerpage.summer');
 });
-
-
-
-
-
 
 
 require __DIR__ . '/auth.php';

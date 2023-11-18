@@ -1,28 +1,26 @@
 @extends('user.template')
 @section('usercontent')
-   <style>
-    .home_header {
-    color: white;
-    align-items: center;
-    padding-top: 250px;
-    height: 458px;
-    width: 100%;
-    background-image: url('{{ asset('user/img/BSC_homepage.jpg') }}');
+    <style>
+        .home_header {
+            background-image: url('{{ asset('user/img/BSC_homepage.jpg') }}');
+        }
 
-}
-.last-content {
-    height: 310px;
-    padding-top: 10px;
-    margin-top: 40px;
-    width: 100%;
-    background-image: url('{{ asset('user/img/homebg.jpg') }}');
-}
-a {
-    text-decoration: none !important;
-    color: #000;
-    font-size: small;
-}
-   </style>
+        .last-content {
+            background-image: url('{{ asset('user/img/endo_banner.jpg') }}');
+        }
+
+        .img-city1 {
+            background-image: url('{{ asset('user/img/campus.jpg') }}');
+        }
+
+        .img-city2 {
+            background-image: url('{{ asset('user/img/campus.jpeg') }}')
+        }
+
+        .img-city3 {
+            background-image: url('{{ asset('user/img/campus1.jpg') }}')
+        }
+    </style>
     <div>
         <section>
             <div class="home_header">
@@ -34,9 +32,9 @@ a {
                     <div class="dropdown">
                         <button class="btn btn-light dropdown-toggle px-2" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Select a Bachelors Category
+                            <h5 class="select-cat mx-3">Select a Bachelors Category</h5>
                         </button>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu dropdown-menu-search">
                             <li><a class="dropdown-item" href="#">Marketing & Media</a></li>
                             <li><a class="dropdown-item" href="#">Law</a></li>
                             <li><a class="dropdown-item" href="#">Computer Science & IT</a></li>
@@ -48,23 +46,23 @@ a {
                             <li><a class="dropdown-item" href="#">Education</a></li>
                             <li><a class="dropdown-item" href="#">Agri-food</a></li>
                             <li><a class="dropdown-item" href="#">Summer Programmes</a></li>
-                            <li><a class="dropdown-item" href="#">More</a></li>
-                            <li><a class="dropdown-item" href="#">Institutes</a></li>
-                            <li><a class="dropdown-item" href="#">Contact</a></li>
                         </ul>
                     </div>
-                    <div class="dropdown mx-3 ">
-                        <button class="btn btn-light dropdown-toggle px-5" type="button" data-bs-toggle="dropdown"
+                    <div class="dropdown mx-2 ">
+                        <button class="btn btn-light dropdown-toggle px-2" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Search in all cities
+
+                            <h5 class="select-cat mx-5 ">
+                                Search in all cities
+                                </h5>
                         </button>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu dropdown-menu-search">
                             <li><a class="dropdown-item" href="#">Athens</a></li>
                             <li><a class="dropdown-item" href="#">Thessaloniki</a></li>
                             <li><a class="dropdown-item" href="#">Piraeus</a></li>
                         </ul>
                     </div>
-                    <button class="btn btn-danger px-3">search</button>
+                    <button class="btn btn-danger  px-4">search</button>
                 </div>
             </div>
         </section>
@@ -201,25 +199,31 @@ a {
             </div>
         </section>
         <section>
-            <h3 class="bcat">Bechelor degrees by City</h3>
+            <h3 class="bcat2">Bechelor degrees by City</h3>
             <div class="row city d-flex justify-content-center">
-                <div class="col-sm-11 col-md-3 img-city">
-                    <img class="city-pic" src="{{ asset('user/img/campus (1).jpeg') }}" alt="">
-                    <div class="title">
-                        UsI college
-                    </div>
+                <div class="col-sm-10 col-md-3 img-city1">
+
+                    <a href="#">
+                        <h4 class="title">
+                            Athens
+                        </h4>
+                    </a>
                 </div>
-                <div class="col-sm-11 col-md-3 img-city">
-                    <img class="city-pic" src="{{ asset('user/img/campus (2).jpg') }}" alt="">
-                    <div class="title">
-                        EBS college
-                    </div>
+                <div class="col-sm-10 col-md-3 mx-3 img-city2">
+
+                    <a href="#">
+                        <h4 class="title">
+                            Thessaloniki
+                        </h4>
+                    </a>
                 </div>
-                <div class="col-sm-11 col-md-3 img-city">
-                    <img class="city-pic" src="{{ asset('user/img/campus (5).jpg') }}" alt="">
-                    <div class="title">
-                        MEDI college
-                    </div>
+                <div class="col-sm-10 col-md-3 img-city3">
+
+                    <a href="#">
+                        <h4 class="title">
+                            Piraeus
+                        </h4>
+                    </a>
                 </div>
             </div>
         </section>
@@ -232,7 +236,7 @@ a {
             </p>
             <p class="text-center">Find a seminar in your favorite City in Greece or book an Online Course.
             </p>
-            <div class="text-center"><button class="btn btn-danger">Learn more</button></div>
+            <button class="last-content-btn">Learn more</button>
         </section>
     </div>
 @endsection

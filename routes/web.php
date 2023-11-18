@@ -47,6 +47,8 @@ Route::controller(CategoryController::class)->group(function () {
     Route::get('cat_detail', 'cat_detail')->name('cat_detail');
 });
 
+
+
 // static inner page 
 
 Route::get('bussiness', function () {

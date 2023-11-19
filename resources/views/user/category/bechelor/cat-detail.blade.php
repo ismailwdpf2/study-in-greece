@@ -2,12 +2,13 @@
 @section('usercontent')
     <div>
         <div class="detail-top">
-            <p class="text-white cat-title">Bachelor| Business Management|</p>
+            <p class="text-white cat-title">Bachelor | Business Management |</p>
             <div>
-                <div class="container dtl-banner bg-white d-flex">
-                    <div><b>Bachelors:</b>
-                        <p>Marketing & Media</p>
-                        <h1>BA (Hons) Business Management (Marketing)</h1>
+                <div class=" dtl-banner bg-white d-flex">
+                    <div>
+                        <b>Bachelors:</b>
+                        <h6>Marketing & Media</h6>
+                        <h2 class="dtl-title">BA (Hons) Business Management (Marketing)</h2>
                         <div class="my-5">
                             <div>
                                 <p> Share it</p>
@@ -28,12 +29,12 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="mycontainer">
             <div class="college-card d-flex justify-content-between">
-                <div class="p-3 d-flex">
+                <div class="p-3 d-flex dtl-card-collum">
                     <img src="{{ asset('user/img/deree_new_logo.jpg') }}" alt="">
                     <div>
-                        <span>Institute:</span>
+                        <h5>Institute:</h5>
                         <h5>DEREE - The American College of Greece</h5>
                         <a href="#">See all Bachelors offered by this institute</a>
                     </div>
@@ -51,10 +52,10 @@
                 <span><i class="fa-solid fa-earth-americas"></i> Greek, English</span>
             </div>
         </div>
-        <div class="container">
-            <div class=" row">
+        <div class="mycontainer">
+            <div class="row">
 
-                <div class="col-8 mx-2">
+                <div class="dtl-main-aria mx-2">
                     <div class="dtl-main">
                         <div class="mx-4">
                             <span style="color: #0B3565">ENTRY REQUIREMENTS</span>
@@ -134,10 +135,10 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="dtl-sidebar-aria">
                     <div class="dtl-sidebar">
-                        <p style="color: #0B3565">TUITION FEES</p>
-                        <span> For information regarding student fees please contact the Institute.</span>
+                        <h5 style="color: #0B3565">TUITION FEES</h5>
+                        <p> For information regarding student fees please contact the Institute.</p>
                     </div>
 
                     <div class="dtl-cform">

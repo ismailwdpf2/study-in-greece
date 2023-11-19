@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\admin\AdminController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\User\CategoryController;
 use App\Http\Controllers\User\UserController;
@@ -16,9 +17,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('user.home');
-});
+// Route::get('/', function () {
+//     return view('user.home');
+   
+// });
+
+// ========admin=========
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -30,10 +34,25 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-// user_route......
+Route::middleware(['auth'])->group(function () {
+    Route::controller(AdminController::class)->group(function () {
+        Route::get('/adminpanel', 'index')->name('adminpanel');
+        Route::get('/alllogo', 'alllogo')->name('alllogo');
+        Route::get('addlogo', 'addlogo')->name('addlogo');
+        Route::post('storelogo', 'storelogo')->name('storelogo');
+        Route::get('deletelogo/{id}', 'deletelogo')->name('deletelogo');
+//=======degrees
+        Route::get('/alldegree', 'alldegree')->name('alldegree');
+        Route::get('/adddegree', 'adddegree')->name('adddegree');
+        Route::post('/storedegree', 'storedegree')->name('storedegree');
+     
+    });
+});
+
+//========= User_route......
 
 Route::controller(UserController::class)->group(function () {
-    Route::get('home', 'home')->name('home');
+    Route::get('/', 'home')->name('home');
     Route::get('bechelor', 'bechelor')->name('bechelor');
     Route::get('masters', 'masters')->name('masters');
     Route::get('intstudent', 'intstudent')->name('intstudent');
@@ -46,8 +65,6 @@ Route::controller(CategoryController::class)->group(function () {
     Route::get('cat_main', 'cat_main')->name('cat_main');
     Route::get('cat_detail', 'cat_detail')->name('cat_detail');
 });
-
-
 
 // static inner page 
 
@@ -90,11 +107,6 @@ Route::get('agri', function () {
 Route::get('summer', function () {
     return view('user.category.static-innerpage.summer');
 });
-
-
-
-
-
 
 
 require __DIR__ . '/auth.php';

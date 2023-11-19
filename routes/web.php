@@ -17,9 +17,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('user.home');
-});
+// Route::get('/', function () {
+//     return view('user.home');
+   
+// });
 
 // ========admin=========
 
@@ -36,11 +37,14 @@ Route::middleware('auth')->group(function () {
 Route::middleware(['auth'])->group(function () {
     Route::controller(AdminController::class)->group(function () {
         Route::get('/adminpanel', 'index')->name('adminpanel');
-
         Route::get('/alllogo', 'alllogo')->name('alllogo');
         Route::get('addlogo', 'addlogo')->name('addlogo');
         Route::post('storelogo', 'storelogo')->name('storelogo');
         Route::get('deletelogo/{id}', 'deletelogo')->name('deletelogo');
+//=======degrees
+        Route::get('/alldegree', 'alldegree')->name('alldegree');
+        Route::get('/adddegree', 'adddegree')->name('adddegree');
+        Route::post('/storedegree', 'storedegree')->name('storedegree');
      
     });
 });
@@ -48,8 +52,7 @@ Route::middleware(['auth'])->group(function () {
 //========= User_route......
 
 Route::controller(UserController::class)->group(function () {
-    Route::get('temp/{$id}', 'temp')->name('temp');
-    Route::get('home', 'home')->name('home');
+    Route::get('/', 'home')->name('home');
     Route::get('bechelor', 'bechelor')->name('bechelor');
     Route::get('masters', 'masters')->name('masters');
     Route::get('intstudent', 'intstudent')->name('intstudent');

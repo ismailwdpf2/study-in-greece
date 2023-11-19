@@ -16,14 +16,14 @@ p{
 }
 .top-logo {
     height: 138px;
-    margin-left: 30px !important;
+    /* margin-left: 30px !important; */
 }
 #logo {
-
-    height: 100px;
-    width: 300px;
+    height: 115px;
+    width: 270px;
+    padding-left: 80px;
     margin: 10px;
-    overflow: hidden;
+    object-fit: scale-down;
 }
 .navbar {
     height: 54px;

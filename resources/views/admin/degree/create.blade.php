@@ -1,15 +1,15 @@
 @extends('admin.template')
 @section('admin-content')
 
-<h2>Add logo </h2>
+<h2>Add Degree </h2>
 
 <div class="container">
-    <form action="{{ route('storelogo') }}" method="POST" enctype="multipart/form-data">
+    <form action="{{ route('storedegree') }}" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="row mb-3">
-            <label class="col-sm-3 col-form-label" for="basic-default-name">Image</label>
+            <label class="col-sm-3 col-form-label" for="basic-default-name">Degree</label>
             <div class="col-sm-8">
-                <input class="form-control" type="file" id="logo" name="logo" />
+                <input class="form-control" type="text" id="degree" name="degree" />
             </div>
         </div>
         <div class="py-3">

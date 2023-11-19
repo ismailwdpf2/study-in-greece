@@ -8,18 +8,14 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    public function temp($id){
-        $logo = Logo::find($id);
+    public function temp(){
+        $logo = Logo::find(1);
         return view("user.template", compact('logo'));
     }
-    // public function temp($id)
-    // {
-    //     $logo = Logo::latest()->first();
-    //     return view('user.template', compact('logo'));
-    // }
-    
+   
     public function home(){
-        return view("user.home");
+        $logo = Logo::latest()->first();
+        return view("user.home",compact('logo'));
     }
     public function bechelor(){
         return view("user.bechelor");

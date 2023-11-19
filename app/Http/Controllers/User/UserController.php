@@ -3,10 +3,21 @@
 namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
+use App\Models\Logo;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
+    public function temp($id){
+        $logo = Logo::find($id);
+        return view("user.template", compact('logo'));
+    }
+    // public function temp($id)
+    // {
+    //     $logo = Logo::latest()->first();
+    //     return view('user.template', compact('logo'));
+    // }
+    
     public function home(){
         return view("user.home");
     }
@@ -28,4 +39,5 @@ class UserController extends Controller
     public function institute(){
         return view("user.institute");
     }
+
 }

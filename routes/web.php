@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\admin\AdminController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\User\CategoryController;
 use App\Http\Controllers\User\UserController;
@@ -20,7 +21,7 @@ Route::get('/', function () {
     return view('user.home');
 });
 
-// =====admin=========
+// ========admin=========
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -33,16 +34,21 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::middleware(['auth'])->group(function () {
-    Route::controller(ClinteController::class)->group(function () {
-        Route::get('/category/{id}/{slug}', 'categorypage')->name('category');
-        Route::get('product-detail/{id}', 'singlepage')->name('singlepage');
-        Route::get('add-to-cart', 'addtocart')->name('addtocart');
+    Route::controller(AdminController::class)->group(function () {
+        Route::get('/adminpanel', 'index')->name('adminpanel');
+
+        Route::get('/alllogo', 'alllogo')->name('alllogo');
+        Route::get('addlogo', 'addlogo')->name('addlogo');
+        Route::post('storelogo', 'storelogo')->name('storelogo');
+        Route::get('deletelogo/{id}', 'deletelogo')->name('deletelogo');
+     
     });
 });
 
-// user_route......
+//========= User_route......
 
 Route::controller(UserController::class)->group(function () {
+    Route::get('temp/{$id}', 'temp')->name('temp');
     Route::get('home', 'home')->name('home');
     Route::get('bechelor', 'bechelor')->name('bechelor');
     Route::get('masters', 'masters')->name('masters');

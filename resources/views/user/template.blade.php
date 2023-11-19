@@ -28,12 +28,20 @@
     <title>move-abroad</title>
 
 </head>
-
+  
 <body>
     <div class="container-fluid">
-        <div class=" top-logo">
-            <a href="{{ route('home') }}"><img id="logo" src="{{ asset('user/img/move-abroad.png') }}"
-                    alt=""></a>
+        <div class="top-logo">
+            {{-- @if(isset($logo))
+            <a href="{{ route('home') }}"><img id="logo" src="{{asset('storage/'.$logo->logo)}}" alt=""></a>
+            @endif --}}
+
+            <a href="{{ route('home') }}"><img id="logo" src="{{asset('user/img/move-abroad.png') }}"
+        alt=""></a>
+
+ {{-- <a href="{{ route('home') }}"><img src="{{ asset('storage/' . $logo->logo) }}" alt=""></a> --}}
+
+
         </div>
         <div class="underline">
 

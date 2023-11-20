@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <meta charset="utf-8">
@@ -20,6 +21,7 @@
     <link href="{{ asset('admin/css/sb-admin-2.min.css') }}" rel="stylesheet">
 
 </head>
+
 <body id="page-top">
     <!-- Page Wrapper -->
     <div id="wrapper">
@@ -36,7 +38,7 @@
             <hr class="sidebar-divider my-0">
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="{{route('adminpanel')}}">
+                <a class="nav-link" href="{{ route('adminpanel') }}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -55,9 +57,9 @@
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                     
-                        <a class="collapse-item" href="{{route('alllogo')}}">All Logo</a>
-                        <a class="collapse-item" href="{{route('addlogo')}}">Add New</a>
+
+                        <a class="collapse-item" href="{{ route('alllogo') }}">See Logo</a>
+                        <a class="collapse-item" href="{{ route('addlogo') }}">Change Logo</a>
                     </div>
                 </div>
             </li>
@@ -71,8 +73,8 @@
                 <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="{{route('alldegree')}}">All Degrees</a>
-                        <a class="collapse-item" href="{{route('adddegree')}}">Add New</a>
+                        <a class="collapse-item" href="{{ route('degree.index') }}">All Degrees</a>
+                        <a class="collapse-item" href="{{ route('degree.create') }}">Add New</a>
                     </div>
                 </div>
             </li>
@@ -121,12 +123,12 @@
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>
             <!-- Sidebar Message -->
-            
+
         </ul>
         <!-- End of Sidebar -->
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
-          <!-- Main Content -->
+            <!-- Main Content -->
             <div id="content">
                 <!-- Topbar -->
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
@@ -197,7 +199,8 @@
                                     </div>
                                     <div>
                                         <div class="small text-gray-500">December 12, 2019</div>
-                                        <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                                        <span class="font-weight-bold">A new monthly report is ready to
+                                            download!</span>
                                     </div>
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
@@ -222,7 +225,8 @@
                                         Spending Alert: We've noticed unusually high spending for your account.
                                     </div>
                                 </a>
-                                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Show All
+                                    Alerts</a>
                             </div>
                         </li>
 
@@ -242,8 +246,7 @@
                                 </h6>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_1.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="img/undraw_profile_1.svg" alt="...">
                                         <div class="status-indicator bg-success"></div>
                                     </div>
                                     <div class="font-weight-bold">
@@ -254,8 +257,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_2.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="img/undraw_profile_2.svg" alt="...">
                                         <div class="status-indicator"></div>
                                     </div>
                                     <div>
@@ -266,20 +268,20 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_3.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="img/undraw_profile_3.svg" alt="...">
                                         <div class="status-indicator bg-warning"></div>
                                     </div>
                                     <div>
-                                        <div class="text-truncate">Last month's report looks great, I am very happy with
+                                        <div class="text-truncate">Last month's report looks great, I am very happy
+                                            with
                                             the progress so far, keep up the good work!</div>
                                         <div class="small text-gray-500">Morgan Alvarez · 2d</div>
                                     </div>
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60"
-                                            alt="...">
+                                        <img class="rounded-circle"
+                                            src="https://source.unsplash.com/Mv9hjnEUHR4/60x60" alt="...">
                                         <div class="status-indicator bg-success"></div>
                                     </div>
                                     <div>
@@ -288,7 +290,8 @@
                                         <div class="small text-gray-500">Chicken the Dog · 2w</div>
                                     </div>
                                 </a>
-                                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Read More
+                                    Messages</a>
                             </div>
                         </li>
 
@@ -333,7 +336,7 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-{{--======================dynamic content aaria====================== --}}
+                    {{-- ======================dynamic content aaria====================== --}}
 
                     @yield('admin-content')
 
@@ -387,21 +390,21 @@
     </div> --}}
 
     <!-- Bootstrap core JavaScript-->
-    <script src="{{asset('admin/vendor/jquery/jquery.min.js')}}"></script>
-    <script src="{{asset('admin/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{ asset('admin/vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{ asset('admin/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="{{asset('admin/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
+    <script src="{{ asset('admin/vendor/jquery-easing/jquery.easing.min.js') }}"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="{{asset('admin/js/sb-admin-2.min.js')}}"></script>
+    <script src="{{ asset('admin/js/sb-admin-2.min.js') }}"></script>
 
     <!-- Page level plugins -->
-    <script src="{{asset('admin/vendor/chart.js/Chart.min.js')}}"></script>
+    <script src="{{ asset('admin/vendor/chart.js/Chart.min.js') }}"></script>
 
     <!-- Page level custom scripts -->
-    <script src="{{asset('admin/js/demo/chart-area-demo.js')}}"></script>
-    <script src="{{asset('admin/js/demo/chart-pie-demo.js')}}"></script>
+    <script src="{{ asset('admin/js/demo/chart-area-demo.js') }}"></script>
+    <script src="{{ asset('admin/js/demo/chart-pie-demo.js') }}"></script>
 
 </body>
 

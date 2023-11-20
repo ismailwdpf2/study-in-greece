@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\admin\AdminController;
+use App\Http\Controllers\admin\DegreeController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\User\CategoryController;
 use App\Http\Controllers\User\UserController;
@@ -42,11 +43,14 @@ Route::middleware(['auth'])->group(function () {
         Route::post('storelogo', 'storelogo')->name('storelogo');
         Route::get('deletelogo/{id}', 'deletelogo')->name('deletelogo');
 //=======degrees
-        Route::get('/alldegree', 'alldegree')->name('alldegree');
-        Route::get('/adddegree', 'adddegree')->name('adddegree');
-        Route::post('/storedegree', 'storedegree')->name('storedegree');
-     
+        // Route::get('/alldegree', 'alldegree')->name('alldegree');
+        // Route::get('/adddegree', 'adddegree')->name('adddegree');
+        // Route::post('/storedegree', 'storedegree')->name('storedegree');    
     });
+
+    Route::resources([
+        'degree'=> DegreeController::class
+    ]);
 });
 
 //========= User_route......

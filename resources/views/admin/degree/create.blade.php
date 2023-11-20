@@ -1,21 +1,12 @@
 @extends('admin.template')
 @section('admin-content')
+    <h2>Add Degree </h2>
 
-<h2>Add Degree </h2>
-
-<div class="container">
-    <form action="{{ route('storedegree') }}" method="POST" enctype="multipart/form-data">
+    <div class="container">
+        <form action="{{route('degree.store')}}" method="POST">
         @csrf
-        <div class="row mb-3">
-            <label class="col-sm-3 col-form-label" for="basic-default-name">Degree</label>
-            <div class="col-sm-8">
-                <input class="form-control" type="text" id="degree" name="degree" />
-            </div>
-        </div>
-        <div class="py-3">
-            <button type="submit" class="btn btn-success">Save</button>
-        </div>
-    </form>
-</div>
-
+            <input type="text" id="d_name" name="d_name" placeholder="Degree name"> <br>
+            <button type="submit" class="btn btn-success my-3">Save</button>
+        </form>
+    </div>
 @endsection

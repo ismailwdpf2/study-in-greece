@@ -16,6 +16,7 @@ class UserController extends Controller
     public function home(){
         $logo = Logo::latest()->first();
         return view("user.home",compact('logo'));
+        
     }
     public function bechelor(){
         return view("user.bechelor");
